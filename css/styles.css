@@ -51,7 +51,7 @@ cursor: pointer;
     letter-spacing: 0.03em;
     color: var(--accent-color);
     display: inline-block;
-    margin-top: 60px;
+    margin-bottom: 20px;
 }
 .logo-up- {
     color: #000000;
@@ -60,12 +60,10 @@ cursor: pointer;
     color: #FFFFFF;
 }
 .header-nav {
-    margin-right: 317px;
+display: flex;
+align-items: center;
 }
-.header-item {
-    padding-block: 32px;
-    display: inline-block;
-}
+
 .header-item:not(:last-child) {
     margin-right: 50px;
 }
@@ -77,8 +75,10 @@ cursor: pointer;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondery-text-color);
+    padding: 32px 0;
+    display: inline-block;
 }
-.header-mail {
+.header-item-mail:not(:last-child) {
     margin-right: 50px; 
 }
 .header-tel {
@@ -87,13 +87,20 @@ cursor: pointer;
 .header .conteiner {
     display: flex;
     align-items: center;
+    /* border-bottom: 1px solid #ECECEC; */
+}
+.header .conteiner:not(index.html) {
     border-bottom: 1px solid #ECECEC;
 }
 .header-list {
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 .header-contact {
-    display: flex;    
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 50px;    
 }
 .header-mail,
 .header-tel {
@@ -103,6 +110,7 @@ cursor: pointer;
     background-color: #2F303A; 
 
     text-align: center;
+    padding: 200px 0;
 }
 .hero-text{
     font-weight: 900;
@@ -113,8 +121,10 @@ cursor: pointer;
     text-transform: uppercase;
     color: var(--primary-white-color);
 
-    padding-top: 200px;
     margin-bottom: 30px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-btn {
     display: inline-block;
@@ -128,12 +138,14 @@ cursor: pointer;
     border-radius: 4px;
     border: none;
 
-    margin-bottom: 200px;
     padding: 10px 32px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.benefits {
+    padding-top: 94px;
 }
 .benefits-list {
     display: flex;
@@ -151,10 +163,12 @@ cursor: pointer;
     margin-bottom: 50px;
 }
 .about {
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 .about-list {
     display: flex;
+    align-items: center;
 }
 .about-item + .about-item, .team-item + .team-item {
     margin-left: 30px;
@@ -184,9 +198,6 @@ cursor: pointer;
     clip-path: inset(50%);
     margin: -1px;
 }
-.benefits-list, .about-title, .team-title, .choice-list {
-    padding-top: 94px;
-}
 .benefits-text {
     font-weight: 400;
     font-size: 14px;
@@ -196,18 +207,20 @@ cursor: pointer;
 }
 .team {
     background-color: #F5F4FA;
+    padding: 94px 0;
 }
 .team-list {
     display: flex;
-    padding-bottom: 94px; 
 }
 .team-item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 .team-img {
-    margin-bottom: 30px;
     display: block;
+}
+.team-people {
+    margin: 30px 0;
 }
 .team-name {
     font-weight: 500;
@@ -225,16 +238,12 @@ cursor: pointer;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    margin-bottom: 30px;
 }
 .footer {
     background-color: #2F303A;
+    padding: 60px 0;
 }
-.footer-list {
-    margin: 20px auto 0px 0px;
-    padding-bottom: 60px;
-}
-.footer-listm:not(:last-child) {
+.footer-item:not(:last-child) {
     margin-bottom: 9px;
 }
 .footer-map {
@@ -274,7 +283,6 @@ cursor: pointer;
     letter-spacing: 0.03em;
     color: var(--secondery-text-color);
     background-color: #F5F4FA;
-    margin-bottom: 34px;
     padding: 6px 22px;
     border: none;
     border-radius: 4px;
@@ -285,11 +293,13 @@ cursor: pointer;
     color: var(--primary-white-color);
     background-color: var(--accent-color)
 }
+.portfolio {
+    padding: 94px 0;
+}
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 94px;
+    margin: 34px 0;
 }
 .portfolio-item:not(:last-child) {
     margin-right: 30px;
