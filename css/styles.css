@@ -272,7 +272,7 @@ align-items: center;
 .choice-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 .choice-item:not(:last-child) {
     margin-right: 8px;
